@@ -1,0 +1,7 @@
+plasma-widget-fastuserswitch (0.1.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #589471)
+    - Add kde_includes.patch to properly locate kde includes
+    - Add user_identity.patch to change icon of plasmoid
+
+ -- Rohan Garg <rohangarg@ubuntu.com>  Sun, 18 Jul 2010 03:58:21 +0530
