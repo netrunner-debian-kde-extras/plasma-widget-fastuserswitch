@@ -6,6 +6,8 @@ Uploaders: Rohan Garg <rohangarg@ubuntu.com>
 Build-Depends: debhelper (>= 7.3.16~), cmake, kdebase-workspace-dev, libqt4-dev, pkg-kde-tools (>= 0.5.0)
 Standards-Version: 3.9.0
 Homepage: http://kde-look.org/content/show.php?content=127462
+Vcs-Git: git://git.debian.org/pkg-kde/kde-extras/plasma-widget-fastuserswitch.git
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-extras/plasma-widget-fastuserswitch.git
 
 Package: plasma-widget-fastuserswitch
 Architecture: any
