@@ -18,8 +18,8 @@
  ***************************************************************************/
 
 #include "sessionwidget.h"
+#include "common.h"
 
-#include <QtCore/QFile>
 #include <QtCore/QList>
 #include <QtCore/QSignalMapper>
 #include <QtCore/QVariant>
@@ -28,7 +28,6 @@
 #include <QtGui/QGraphicsLinearLayout>
 #include <QtGui/QShowEvent>
 
-#include <kicon.h>
 #include <kiconloader.h>
 #include <kuser.h>
 #include <kworkspace/kdisplaymanager.h>
@@ -81,19 +80,15 @@ SessionWidget::SessionWidget( QGraphicsItem * parent, Qt::WindowFlags wFlags)
     if (!user.isValid())
       continue;
 
-    Plasma::IconWidget* entry = createButton(this);
+    if (session.tty)
+      continue;
 
-    if (QFile::exists(user.faceIconPath())) {
-      pixmap.load(user.faceIconPath());
-    } else {
-      pixmap = KIcon("preferences-desktop-user").pixmap(iconSize);
-    }
+    Plasma::IconWidget* entry = createButton(this);
+    pixmap = getUserIcon(user);
 
     entry->setIcon(pixmap);
 
-    QString username = user.property(KUser::FullName).toString();
-    if (username.isEmpty())
-      username = session.user;
+    QString username = getUsername(false, user);
     entry->setText(username);
 
     connect(entry, SIGNAL(clicked()), m_signalMapper, SLOT(map()));
