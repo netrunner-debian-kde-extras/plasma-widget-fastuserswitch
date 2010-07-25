@@ -1,3 +1,12 @@
+plasma-widget-fastuserswitch (0.2.1-1) unstable; urgency=low
+
+  * New upstream release
+    - Drop user_identity.patch, applied upstream
+    - Drop kde_includes.patch, applied upstream
+  * Added Vcs-Git and Vcs-Browser entries to control file
+
+ -- Rohan Garg <rohangarg@ubuntu.com>  Mon, 26 Jul 2010 00:49:36 +0530
+
 plasma-widget-fastuserswitch (0.1.1-1) unstable; urgency=low
 
   * Initial release (Closes: #589471)
