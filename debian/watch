@@ -1,0 +1,3 @@
+version=3
+http://kde-look.org/content/download.php?content=127462 \
+  /CONTENT/content-files/127462-fastuserswitch-([\d\.]+)\.tar\.(?:gz|bz2).*

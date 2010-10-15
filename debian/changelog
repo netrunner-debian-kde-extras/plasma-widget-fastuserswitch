@@ -1,3 +1,10 @@
+plasma-widget-fastuserswitch (0.2.1-2) UNRELEASED; urgency=low
+
+  [ Felix Geyer ]
+  * Add a watch file.
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 15 Oct 2010 13:58:09 +0200
+
 plasma-widget-fastuserswitch (0.2.1-1) unstable; urgency=low
 
   * New upstream release
