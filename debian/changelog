@@ -2,6 +2,8 @@ plasma-widget-fastuserswitch (0.2.1-2) UNRELEASED; urgency=low
 
   [ Felix Geyer ]
   * Add a watch file.
+  * Build-depend on kde-workspace-dev instead of the transitional package
+    kdebase-workspace-dev.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 15 Oct 2010 13:58:09 +0200
 
